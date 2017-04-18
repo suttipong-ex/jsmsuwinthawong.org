@@ -1,0 +1,17 @@
+a {
+  color: #3D454D;
+}
+
+.form-number {
+  color: steelblue;
+}
+@media (min-width: 992px){
+  .app-content {
+    margin-left: 13.75rem;
+  }
+}
+@media (max-width: 991px){
+  .app-content {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,116 @@
+<div class="app-content padding">
+  <div class="dip--container dip--container__home box container">
+    <div class="grey-50 dip--page__header">
+      <div class="navbar">
+        <div>
+          <i class="fa fa-home" aria-hidden="true"></i> หน้าหลัก
+          <span class="pull-right">
+             <button type="button" class="btn btn-info btn-md" (click)="openDownLoad()">
+               <i class="fa fa-download" aria-hidden="true"></i> ดาวโหลดแบบฟอร์ม
+             </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="padding">
+      <h6 style="margin-left: 10px">บันทึกคำขอ(มีค่าธรรมเนียม)</h6>
+      <ol>
+        <ul>
+          <a routerLink="all-form/birth/present" routerLinkActive="active">
+            <span class="form-number">แบบฟอร์ม ก.01 </span>
+            คำขอจดทะเบียนเครื่องหมายการค้า เครื่องหมายบริการเครื่องหมายรับรองหรือเครื่องหมายร่วม
+          </a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/opposition/present" routerLinkActive="active">
+            <span class="form-number">แบบฟอร์ม ก.02 </span>
+            คำคัดค้านการขอจดทะเบียนเครื่องหมายการค้า
+          </a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/appeal/present" routerLinkActive="active">
+            <span class="form-number">แบบฟอร์ม ก.03 </span>
+            คำอุทธรณ์
+          </a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/transfer/present" routerLinkActive="active">
+            <span class="form-number">แบบฟอร์ม ก.04 </span>
+            คำขอโอนหรือรับมรดกสิทธิ
+          </a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/licensing/present" routerLinkActive="active">
+            <span class="form-number">แบบฟอร์ม ก.05 </span>
+            คำขอจดทะเบียนสัญญาอนุญาตให้ใช้เครื่องหมายการค้า/บริการ
+          </a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/correction/present" routerLinkActive="active">
+            <span class="form-number">แบบฟอร์ม ก.06 </span>
+            คำขอแก้ไขเปลี่ยนแปลงรายการจดทะเบียน
+          </a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/renewal/present" routerLinkActive="active">
+            <span class="form-number">แบบฟอร์ม ก.07 </span>
+            คำขอต่ออายุการจดทะเบียน
+          </a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/cancellation/present" routerLinkActive="active">
+            <span class="form-number">แบบฟอร์ม ก.08 </span>
+            คำขอให้เพิกถอนการจดทะเบียน
+          </a>
+        </ul>
+      </ol>
+      <hr>
+      <h6 style="margin-left: 10px">บันทึกคำขอ(ไม่มีค่าธรรมเนียม)</h6>
+      <ol>
+        <ul>
+          <a routerLink="all-form/debate/present" routerLinkActive="active">
+            <span class="form-number">แบบฟอร์ม ก.02 </span>
+            คำโต้แย้ง
+          </a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/requestfromkingdom/present" routerLinkActive="active">
+            <span class="form-number">แบบฟอร์ม ก.10 </span>
+            คำขอถือสิทธิวันที่ยื่นคำขอนอกราชอาณาจักรครั้งแรกหรือวันที่นำสินค้าที่ใช้เครื่องหมายออกแสดงในงานแสดง
+            สินค้าระหว่างประเทศเป็นวันยื่นคำขอในราชอาณาจักรตามมาตรา 28 หรือมาตรา 28 ทวิ
+          </a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/reject/present" routerLinkActive="active"><span
+            class="form-number">แบบฟอร์ม ก.12 </span>
+            หนังสือแสดงการปฏิเสธ</a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/judgment-ruling/present" routerLinkActive="active"><span class="form-number">แบบฟอร์ม ก.14 </span>
+            หนังสือแจ้งฟ้องคดีต่อศาล คำพิพากษาและผลคดี</a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/request-cancellation/present" routerLinkActive="active"><span class="form-number">แบบฟอร์ม ก.15 </span>
+            หนังสือชี้แจงการถูกร้องขอให้เพิกถอนการจดทะเบียน</a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/postpone/present" routerLinkActive="active"><span
+            class="form-number">แบบฟอร์ม ก.19 </span>
+            หนังสือขอผ่อนผันการส่งหลักฐาน</a>
+        </ul>
+        <ul>
+          <a routerLink="all-form/freedoc/present" routerLinkActive="active">
+            <span class="form-number">แบบฟอร์ม ก.20 </span>หนังสือนำส่งเอกสารหลักฐานและคำชี้แจง</a>
+        </ul>
+      </ol>
+      <hr>
+      <h6 style="margin-left: 10px">บันทึกรายการชำระเงิน(อื่นๆ)</h6>
+      <ol>
+        <ul>
+          <a routerLink="all-form/pay-approve" routerLinkActive="active"> <span
+            class="form-number">บันทึกการชำระเงิน </span>บันทึกการชำระเงินที่ได้รับการอนุมัติ</a>
+        </ul>
+      </ol>
+    </div>
+  </div>
+</div>
