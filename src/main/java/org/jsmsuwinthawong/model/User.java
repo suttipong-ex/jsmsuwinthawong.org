@@ -36,7 +36,7 @@ public class User implements Serializable{
 
     @OneToMany
     @JoinColumn(name = "USER_ID")
-    private List<Authority> authorities;
+    private List<Role> authorities;
 
     public Long getId() {
         return id;
@@ -86,11 +86,11 @@ public class User implements Serializable{
         this.email = email;
     }
 
-    public List<Authority> getAuthorities() {
+    public List<Role> getAuthorities() {
         return authorities;
     }
 
-    public void setAuthorities(List<Authority> authorities) {
+    public void setAuthorities(List<Role> authorities) {
         this.authorities = authorities;
     }
 

@@ -5,11 +5,12 @@ import {HttpModule} from "@angular/http";
 import {AppComponent} from "./app.component";
 import {Routes, RouterModule, PreloadAllModules} from "@angular/router";
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
-import {HomeComponent} from "./private/home/home.component";
+import {HomePublicComponent} from "./public/home_pub/home.public.component";
+import {ShareModule} from "./share/share.module";
 
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent}
+  {path: '', component: HomePublicComponent}
 ];
 
 @NgModule({
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
   ],
   declarations: [
     AppComponent,
+    HomePublicComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes, {useHash: true,preloadingStrategy: PreloadAllModules}),
     NgbModule.forRoot(),
+    ShareModule
   ],
   bootstrap: [AppComponent],
 })

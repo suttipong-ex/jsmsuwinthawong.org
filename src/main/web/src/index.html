@@ -4,31 +4,33 @@
   <meta charset="utf-8">
   <title>Jsmsuwinthawong</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
-    .input-disabled{
-      background-color: #eceeef;
-      display: block;
-      padding: .5rem .75rem;
-      font-size: .875rem;
-      height: 35px;
-      color: #55595c;
-      background-clip: padding-box;
-      border: 1px solid #e4e6e8;
-      border-radius: 2px;
-      margin: 0;
+    .loader {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #7b7b7b;
+      border-bottom: 16px solid #7b7b7b;
+      width: 120px;
+      height: 120px;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
     }
-    .input-disabled:hover{
-      cursor: not-allowed;
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
     }
-    color-text{
-      color: #83868a;
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
     }
   </style>
 </head>
-<body class="box-shadow-z2 box-radius-1x" data-spy="scroll" data-target="#filing-nav" data-offset="140">
-<app-root>Loading...</app-root>
+<body class="box-shadow-z2 box-radius-1x" data-spy="scroll"data-offset="140">
+<app-root><div class="loader"></div></app-root>
 </body>
 </html>
