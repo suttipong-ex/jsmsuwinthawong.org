@@ -1,0 +1,22 @@
+/**
+ * @author jittagornp <http://jittagornp.me>
+ * create : 2017/01/02
+ */
+
+.dip--dialog--ajax-loading .modal-content{
+    padding: 10px;
+}
+
+.dip--dialog--ajax-loading__circle{
+    width: 36px;
+}
+
+.dip--dialog--ajax-loading__circle + span{
+    display: inline-block;
+    margin-left: 15px;
+    width: 400px;
+    line-height: 30px;
+    position: relative;
+    top: 2px;
+    text-align: center;
+}

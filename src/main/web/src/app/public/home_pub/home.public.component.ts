@@ -7,11 +7,7 @@ import {NgbModal, NgbModalRef} from "@ng-bootstrap/ng-bootstrap";
   styleUrls: ['./home.public.component.css']
 })
 export class HomePublicComponent implements OnInit {
-
-  constructor( public modalService: NgbModal) { }
-
   ngOnInit() {
-  }
-  openDownLoad(){
+
   }
 }

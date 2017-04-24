@@ -1,0 +1,63 @@
+/**
+ * @author jittagornp <http://jittagornp.me>
+ * create : 2017/01/10
+ */
+
+.dip--app__identity-toolbar{
+    background-color: rgb(155, 56, 204); 
+    height: 3px;
+    position: fixed; 
+    top : 0;
+    left: 0;
+    right: 0;
+}
+
+.dip--toolbar__app-name--eng{
+    font-weight: bold;
+    line-height: 3.5rem;
+    font-size: 12pt;
+}
+
+.dip--toolbar{
+
+}
+
+.dip--toolbar__brand > img {
+    width: 40px;
+    height: 40px;
+    max-height: 40px;
+    position: relative;
+    top : 8px;
+}
+
+.dip--toolbar__search-icon {
+    position: relative;
+    top: 4px;
+    padding-left: 5px;
+    color: #d0d0d0;
+
+    :hover {
+        color: #909090; 
+    }
+}
+
+.dip--toolbar .btn-sm{
+    margin-top: -5px;
+}
+
+.dip--toolbar__user-name > i{
+    margin-left: 10px;
+    position: relative;
+    bottom: 5px;
+    color : #7b7b7b;
+}
+
+/* container */
+.dip--container--center{
+    top: 56px;
+    position: relative;
+}
+
+
+@import "page.scss";
+@import "sidebar.scss";

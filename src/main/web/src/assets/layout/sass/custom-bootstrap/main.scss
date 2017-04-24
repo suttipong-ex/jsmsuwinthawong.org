@@ -1,0 +1,36 @@
+/**
+ * @author jittagornp <http://jittagornp.me>
+ * create : 2016/12/07
+ */
+input[type=text].form-control:focus, 
+input[type=password].form-control:focus{
+    border-color: rgba(104, 135, 255, 0.6); 
+    box-shadow: 0 0 2px rgba(0, 126, 255, 0.3);
+    -moz-box-shadow: 0 0 2px rgba(0, 126, 255, 0.3);
+    -webkit-box-shadow: 0 0 2px rgba(0, 126, 255, 0.3);
+}
+
+.alert{
+    padding: 0.7rem;
+}
+
+.alert-warning{
+    background-color: #ffebc6;
+    border-color: #ffdb99;
+    color: #c39444;
+}
+
+.btn.dark-white{
+    border : solid 1px #dedede;
+}
+
+body .pagination .page-item.active, 
+body .pagination > .active > a, 
+body .pagination > .active > span, 
+body .pager .page-item.active, 
+body .pager > .active > a, 
+body .pager > .active > span{
+    color: white !important;
+    background-color: #ff9900 !important;
+    border-color: #ff9900 !important;
+}

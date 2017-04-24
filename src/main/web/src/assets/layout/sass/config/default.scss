@@ -1,0 +1,27 @@
+/**
+ * @author jittagornp <http://jittagornp.me>
+ * create : 2016/12/07
+ */
+html{
+    background-color: #f0f0f0;
+} 
+
+body{
+    box-shadow: 0 0 0 #fff !important;
+    background: none !important;
+    overflow-y: scroll;
+}
+
+.modal-open{
+    overflow-y: scroll !important;
+}
+
+.modal-open .modal{
+    overflow-y: hidden !important;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+@import "for-mobile.scss";

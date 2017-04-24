@@ -1,0 +1,20 @@
+/**
+ * @author jittagornp <http://jittagornp.me>
+ * create : 2017/01/02
+ */
+
+@media(max-width : 900px){
+    
+    .dip--toolbar__app-name--eng{
+        display: none;
+    }
+    
+}
+
+@media(max-width : 628px){
+    
+    .dip--container--center{
+        top : 112px !important;
+    }
+    
+}

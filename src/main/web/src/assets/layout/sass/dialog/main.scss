@@ -1,0 +1,70 @@
+/**
+ * @author jittagornp <http://jittagornp.me>
+ * create : 2016/12/09
+ */
+
+.modal.white-overlay .modal-content{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 
+        0 -1px 0px rgba(0, 0, 0, 0.03);
+    overflow: hidden;
+}
+
+.white-overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 544px){
+    .modal-dialog {
+        margin: 15% auto;
+    }
+
+    .dip--dialog--alert .modal-dialog,
+    .dip--dialog--confirm .modal-dialog,
+    .dip--dialog--ajax-loading .modal-dialog{ 
+        max-width: 500px;
+    }
+}
+
+.modal-header, 
+.modal-content{
+    border-color: rgba(147, 156, 165, 0.13);
+}
+
+.modal-header{
+    background-color: #fbfbfb;
+}
+
+.modal-footer{
+    border : none;
+}
+
+.modal-footer .btn{
+    margin-left: 10px;
+}
+
+.dip--dialog__close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    color: #c1c1c1;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dip--dialog__close:hover{
+    color: #929292;
+}
+
+.dip--dialog__ajax-loading{
+    margin-top: 10px;
+    position: absolute;
+    right: 55px;
+    top: 10px;
+}
+
+@import "ajax-loading.scss";

@@ -1,0 +1,21 @@
+/**
+ * @author jittagornp <http://jittagornp.me>
+ * create : 2016/12/09
+ */
+.modal.white-overlay .modal-content {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 -1px 0px rgba(0, 0, 0, 0.02);
+  overflow: hidden; }
+
+.modal-header,
+.modal-content,
+.modal-footer {
+  border-color: rgba(147, 156, 165, 0.13); }
+
+.modal-header {
+  background-color: #fbfbfb; }
+
+.modal-footer .btn {
+  margin-left: 10px; }
+
+.dip--dialog__ajax-loading {
+  margin-top: 10px; }

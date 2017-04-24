@@ -1,0 +1,17 @@
+.dip--app__identity-toolbar {
+    background-color: #2d672d !important;
+}
+.user {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.one {
+    background-image: url('http://placehold.it/350x150');
+}

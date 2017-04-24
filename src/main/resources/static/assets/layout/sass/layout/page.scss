@@ -1,0 +1,38 @@
+/**
+ * @author jittagornp <http://jittagornp.me>
+ * create : 2017/01/10
+ */
+
+.dip--container{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.dip--page__container{
+    min-height: 500px;
+}
+
+.dip--page__header{
+    border-bottom: solid 1px #eaeaea;
+}
+
+.dip--page__header .navbar{
+    margin: 0 auto;
+    font-size: 16pt;
+    line-height: 50px; 
+}
+
+.dip--page__header  .navbar small{
+    color: #999;
+}
+
+.dip--page__header-icon{ 
+    position: relative;
+    top: 2px;
+    margin-right: 5px; 
+    color: #ffca00;
+}
+
+.dip--page__header__back-button{
+    margin-left: 15px;
+}

@@ -1,0 +1,95 @@
+/**
+ * @author jittagornp <http://jittagornp.me>
+ * create : 2016/12/07
+ */
+@import "config/default.scss";
+@import "custom-bootstrap/main.scss";
+
+.box{
+    overflow: hidden;
+}
+
+.box > .box-header{
+    background-color: #fbfbfb;
+}
+
+.box-header > h2{
+    margin-bottom: 15px;
+}
+
+.form-group.text-right .btn + .btn{
+    margin-left: 10px;
+}
+
+.orange-button{
+    color : #fff;
+    background-color: #ff9900;
+}
+
+.form-group > label{
+    position: relative;
+    display: block;
+}
+
+.form-group > label > small{
+    color: #b5b5b5;
+}
+
+.dip--input-length{
+    font-size: 9pt;
+    margin-top: 5px;
+    color: #b5b5b5;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.dip--input-required{
+    color: #f44455;
+    font-size: 16pt;
+    margin-left: 5px;
+}
+
+.dip--validate-error{
+    border-color : #f44455;
+}
+
+.dip--validate-message{
+    color: #f44455;
+}
+
+.dip--success-message{
+    color : #5cb85c;
+}
+
+.dip--validate-message,
+.dip--success-message{
+    font-size: 10pt;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.dip--email--activated{
+    color : green;
+}
+
+.dip--email--activated i{
+    margin-left: 5px;
+}
+body.modal-open{
+    overflow: hidden !important;
+}
+.dip--grid--normal .row [class*="col-"]{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@import "layout/main.scss";
+
+/* component */
+@import "dialog/main.scss";
+@import "notification/main.scss";
+
+
+@import "home/main.scss";
+@import "dashboard-form/main.scss";

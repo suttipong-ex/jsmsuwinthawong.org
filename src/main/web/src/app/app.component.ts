@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import * as moment from "moment";
-import {HttpStatusBus} from "./share/http-status-bus/HttpStatusBus";
+import {HttpStatusBus} from "./share/http/HttpStatusBus";
 
 @Component({
   selector: 'app-root',
