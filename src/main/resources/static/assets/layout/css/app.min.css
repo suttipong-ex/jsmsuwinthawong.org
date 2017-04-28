@@ -146,9 +146,9 @@ body .pager > .active > span {
     font-size: 12pt; }
 
 .dip--toolbar__brand > img {
-    width: 40px;
-    height: 40px;
-    max-height: 40px;
+    width: 50px;
+    height: 80px;
+    max-height: 60px;
     position: relative;
     top: 8px; }
 
@@ -204,7 +204,7 @@ body .pager > .active > span {
     margin-left: 15px; }
 
 .app-aside {
-    top: 3.5rem;
+    top: 4.8rem;
     background-color: #3d454d;
     /*#2b6699*/ }
 

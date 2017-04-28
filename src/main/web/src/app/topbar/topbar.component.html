@@ -2,52 +2,51 @@
   <div class="dip--app__identity-toolbar"></div>
   <div class="navbar dip--toolbar">
     <div class="dip--toolbar"></div>
-    <span class="col-md-12">
-       <span class="col-lg-2">
+    <div class="col-md-12">
+       <span class="col-lg-4">
          <a class="navbar-brand nav-link dip--toolbar__brand" ui-sref="home">
           <img src="assets/layout/image/logo.png"/>
         </a>
         <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
           <li class="nav-item">
-            <a class="nav-link" ui-sref="home">คริสตจักรใจสมานสุวินทวงศ์</a>
+            <a class="nav-link" (click)="showAdminMenu()">คริสตจักรใจสมานสุวินทวงศ์</a>
           </li>
         </ul>
       </span>
-      <span class="col-lg-2"></span>
-      <span class="col-lg-1">
-        <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
-          <li class="nav-item">
-            <a class="nav-link">About</a>
-          </li>
-        </ul>
-      </span>
-      <span class="col-lg-1">
-        <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
-          <li class="nav-item">
-            <a class="nav-link">Activity</a>
-          </li>
-        </ul>
-      </span>
-      <span class="col-lg-1">
-        <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
-          <li class="nav-item">
-            <a class="nav-link">Media</a>
-          </li>
-        </ul>
-      </span>
-      <span class="col-lg-1">
-        <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
-          <li class="nav-item">
-            <a class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </span>
-      <span class="nav navbar-nav pull-right">
-         <ul (click)="dropDownAction()">
+       <span class="col-lg-4">
+           <span class="col-lg-3">
+            <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
+              <li class="nav-item">
+                <a class="nav-link">About</a>
+              </li>
+            </ul>
+            </span>
+              <span class="col-lg-3">
+                <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
+                  <li class="nav-item">
+                    <a class="nav-link">Activity</a>
+                  </li>
+                </ul>
+              </span>
+              <span class="col-lg-3">
+                <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
+                  <li class="nav-item">
+                    <a class="nav-link">Media</a>
+                  </li>
+                </ul>
+              </span>
+              <span class="col-lg-3">
+                <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
+                  <li class="nav-item">
+                    <a class="nav-link">Contact</a>
+                  </li>
+                </ul>
+              </span>
+           </span>
+      <span class="col-lg-4">
+         <ul (click)="dropDownAction()"  class="nav navbar-nav pull-right" >
               <li class="{{dropDownClass}}">
-                <a  class="nav-link dip--toolbar__user-name " data-toggle="dropdown" aria-expanded="true">
-                        <span class="user one"></span>
-                </a>
+                 <span class="user one nav-link dip--toolbar__user-name " data-toggle="dropdown" aria-expanded="true"></span>
                     <div class="dropdown-menu pull-right dropdown-menu-scale">
                           <a class="dropdown-item" href="#"><span class="glyphicon glyphicon-user"></span>  ผู้ดูแลระบบ</a>
                           <a class="dropdown-item" href="#"><span class="glyphicon glyphicon-pencil"></span>  ดู/แก้ไขข้อมูลส่วนตัว</a>
@@ -55,9 +54,9 @@
                           <div class="dropdown-divider"></div>
                           <a class="dropdown-item" href="/logout"><span class="glyphicon glyphicon-log-out"></span>  ออกจากระบบ</a>
                     </div>
-          </li>
+            </li>
        </ul>
       </span>
-    </span>
+    </div>
   </div>
 </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {NgbModal, NgbModalOptions, NgbModalRef} from "@ng-bootstrap/ng-bootstrap";
+import {SidebarComponent} from "../share/sidebar/sidebar.component";
 // import {User} from "../share/user";
 // import {AuthenService} from "../share/security/authen.service";
 
@@ -9,13 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopbarComponent implements OnInit {
 
+constructor(private modalService : NgbModal){}
+  clickOpen : boolean = false;
   dropDown:boolean=false;
   dropDownClass:string='nav-item dropdown';
+
   ngOnInit() {
     // this.authen.user.subscribe(user => this.user = user);
   }
 
-  dropDownAction(){
+  dropDownAction():void{
     this.dropDown = !this.dropDown;
     if(this.dropDown){
       this.dropDownClass = 'nav-item dropdown open';
@@ -24,5 +29,15 @@ export class TopbarComponent implements OnInit {
       this.dropDownClass = 'nav-item dropdown';
     }
   }
+  showAdminMenu():void{
+    this.clickOpen = !this.clickOpen;
+    let option: NgbModalOptions = {size: 'sm'};
+    const ngbModal :NgbModalRef = this.modalService.open(SidebarComponent,option)
+    if(this.clickOpen){
+      ngbModal.componentInstance.adminMenu = true;
+    }else{
+      ngbModal.componentInstance.adminMenu = false;
+    }
 
+  }
 }

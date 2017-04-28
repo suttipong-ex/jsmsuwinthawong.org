@@ -7,6 +7,9 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {HomePublicComponent} from "./public/home_pub/home.public.component";
 import {INTERCEPT_HTTP_PROVIDERS} from "./share/http/intercept_http";
 import {TopbarComponent} from "./topbar/topbar.component";
+import {SidebarComponent} from "./share/sidebar/sidebar.component";
+import {HttpModule} from "@angular/http";
+import {ShareModule} from "./share/share.module";
 
 
 const appRoutes: Routes = [
@@ -21,11 +24,13 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomePublicComponent,
-    TopbarComponent
+    TopbarComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
+    ShareModule,
     RouterModule.forRoot(appRoutes, {useHash: true,preloadingStrategy: PreloadAllModules}),
     NgbModule.forRoot()
   ],
