@@ -7,12 +7,18 @@ a {
 }
 @media (min-width: 992px){
     .app-content {
-        margin-left: 13.75rem;
+        margin-left: 0;
+    }
+    .padding{
+        top: 3.5rem;
     }
 }
 @media (max-width: 991px){
     .app-content {
         margin-left: 0;
+    }
+    .padding{
+        top: 3.5rem;
     }
 }
 .btn.btn-outline:hover, .btn.btn-outline:focus {

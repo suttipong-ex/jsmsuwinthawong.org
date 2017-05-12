@@ -10,6 +10,7 @@ a {
     margin-left: 13.75rem;
   }
 }
+
 @media (max-width: 991px){
   .app-content {
     margin-left: 0;

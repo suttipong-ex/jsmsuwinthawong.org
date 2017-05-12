@@ -15,48 +15,55 @@
       </span>
        <span class="col-lg-4">
            <span class="col-lg-3">
-            <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
+            <ul class="nav navbar-nav">
               <li class="nav-item">
-                <a class="nav-link">About</a>
+                  <a class="nav-link" style="font-size: x-large">About</a>
               </li>
             </ul>
             </span>
               <span class="col-lg-3">
                 <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
                   <li class="nav-item">
-                    <a class="nav-link">Activity</a>
+                    <a class="nav-link" style="font-size: x-large">Activity</a>
                   </li>
                 </ul>
               </span>
               <span class="col-lg-3">
                 <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
                   <li class="nav-item">
-                    <a class="nav-link">Media</a>
+                    <a class="nav-link" style="font-size: x-large">Media</a>
                   </li>
                 </ul>
               </span>
               <span class="col-lg-3">
                 <ul class="nav navbar-nav pull-left dip--toolbar__app-name--thai">
                   <li class="nav-item">
-                    <a class="nav-link">Contact</a>
+                    <a class="nav-link" style="font-size: x-large">Contact</a>
                   </li>
                 </ul>
               </span>
-           </span>
-      <span class="col-lg-4">
-         <ul (click)="dropDownAction()"  class="nav navbar-nav pull-right" >
-              <li class="{{dropDownClass}}">
-                 <span class="user one nav-link dip--toolbar__user-name " data-toggle="dropdown" aria-expanded="true"></span>
-                    <div class="dropdown-menu pull-right dropdown-menu-scale">
-                          <a class="dropdown-item" href="#"><span class="glyphicon glyphicon-user"></span>  ผู้ดูแลระบบ</a>
-                          <a class="dropdown-item" href="#"><span class="glyphicon glyphicon-pencil"></span>  ดู/แก้ไขข้อมูลส่วนตัว</a>
-                          <a class="dropdown-item" href="#"><span class="glyphicon glyphicon-wrench"></span>  เปลี่ยนรหัสผ่าน</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="/logout"><span class="glyphicon glyphicon-log-out"></span>  ออกจากระบบ</a>
-                    </div>
-            </li>
-       </ul>
-      </span>
+            </span>
+            <span class="col-lg-4" *ngIf="User">
+                 <ul (click)="dropDownAction()"  class="nav navbar-nav pull-right" >
+                      <li class="{{dropDownClass}}">
+                         <span class="user one nav-link dip--toolbar__user-name " data-toggle="dropdown" aria-expanded="true"></span>
+                            <div class="dropdown-menu pull-right dropdown-menu-scale">
+                                  <a class="dropdown-item" href="#"><span class="glyphicon glyphicon-user"></span>  ผู้ดูแลระบบ</a>
+                                  <a class="dropdown-item" href="#"><span class="glyphicon glyphicon-pencil"></span>  ดู/แก้ไขข้อมูลส่วนตัว</a>
+                                  <a class="dropdown-item" href="#"><span class="glyphicon glyphicon-wrench"></span>  เปลี่ยนรหัสผ่าน</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="/logout"><span class="glyphicon glyphicon-log-out"></span>  ออกจากระบบ</a>
+                            </div>
+                    </li>
+               </ul>
+              </span>
+              <span class="col-lg-4" *ngIf="!User">
+                  <ul class="nav navbar-nav pull-right">
+                      <span class="nav-link dip--toolbar__user-name " data-toggle="dropdown" aria-expanded="true">
+                          <button class="btn-xl" type="button" class="btn btn-secondary"><span class="glyphicon glyphicon-lock"></span> เข้าสู่ระบบ</button>
+                     </span>
+                  </ul>
+             </span>
     </div>
   </div>
 </div>

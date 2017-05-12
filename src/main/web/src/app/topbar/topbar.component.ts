@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NgbModal, NgbModalOptions, NgbModalRef} from "@ng-bootstrap/ng-bootstrap";
 import {SidebarComponent} from "../share/sidebar/sidebar.component";
+import {User} from "firebase/app";
 // import {User} from "../share/user";
 // import {AuthenService} from "../share/security/authen.service";
 
@@ -10,7 +11,7 @@ import {SidebarComponent} from "../share/sidebar/sidebar.component";
   styleUrls: ['./topbar.component.css']
 })
 export class TopbarComponent implements OnInit {
-
+private User : string = null;
 constructor(private modalService : NgbModal){}
   clickOpen : boolean = false;
   dropDown:boolean=false;
