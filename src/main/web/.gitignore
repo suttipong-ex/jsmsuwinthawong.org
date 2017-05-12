@@ -1,7 +1,13 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
 # compiled output
 /dist
+/tmp
 
-#IDEs and Editors
+# dependencies
+/node_modules
+
+# IDEs and editors
 /.idea
 .project
 .classpath
@@ -9,16 +15,12 @@
 *.launch
 .settings/
 
-#Dependencies
-/node_modules
-
 # IDE - VSCode
-.vscode/
+.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
 
 # misc
 /.sass-cache
@@ -35,11 +37,4 @@ testem.log
 
 #System Files
 .DS_Store
-*.orig
 Thumbs.db
-/nbproject/private/
-/target/
-/log/
-/src/main/resources/webapp/node_modules/
-/src/main/web/node_modules/
-jsmsuwinthawong.iml
